@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_USER = 'ayushnayak123'
+        DOCKERHUB_USER = 'vanshsutaria'
         IMAGE_TAG = 'v11'
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/AyushN08/Devops_Expt.6_Ayush.git'
+                git branch: 'main', url: 'https://github.com/Vansh-Sutaria/Devops_Exp6'
             }
         }
 
